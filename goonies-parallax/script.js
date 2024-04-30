@@ -75,6 +75,16 @@ window.addEventListener("scroll", () => {
         plotDataParagraph.style.top = `0px`;
     }
 
+    if (value >= 30 && value <= 60) {
+        const progress = (value - 30) / (50 - 30);
+        const newTopValue = 20 * (1 - progress);
+        plotDataParagraph.style.top = `${newTopValue}%`;
+    } else if (value < 30) {
+        plotDataParagraph.style.top = '20%';
+    } else {
+        plotDataParagraph.style.top = '0%';
+    }
+
     if (value >= 800) {
         headingMain1.style.display = 'none';
         headingMain2.style.display = 'none';
