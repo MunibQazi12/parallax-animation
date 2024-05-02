@@ -140,25 +140,25 @@ window.addEventListener("scroll", () => {
         coinImage3.style.top = '900px';
         coinImage4.style.bottom = '900px';
     }
-    if (value >= 3200 && value <= 4000) {
-        const scaleValue = 1.3 + ((value - 3200) / 1000) * 0.1; // Gradually increases from 1.3 to 1.4 from scroll 3000 to 3500
+    if (value >= 3800 && value <= 4300) {
+        const scaleValue = 1.3 + ((value - 3800) / 1000) * 0.1; // Gradually increases from 1.3 to 1.4 from scroll 3000 to 3500
         monsterSkeletonImage.style.transform = `scale(${scaleValue})`;     
         monsterSkeletonImage.style.transition = "transform 0.5s ease-in-out";
-    } else if (value < 3200) {
+    } else if (value < 3800) {
         monsterSkeletonImage.style.transform = "scale(1)";
         monsterSkeletonImage.style.transition = "transform 0.5s ease-in-out";
     } else {
         monsterSkeletonImage.style.transform = "scale(1.5)";
         monsterSkeletonImage.style.transition = "transform 0.5s ease-in-out";
     }
-    if (value >= 3200 && value <= 3500) {
-        const bottomValue = (value - 3200) / 3200 
+    if (value >= 3800 && value <= 4300) {
+        const bottomValue = (value - 3800) / 3800 
         peopleMonster.style.bottom = `${bottomValue}px`;    
         peopleMonster.style.transition = "0.5s ease-in-out";
-    } else if (value < 3200) {
+    } else if (value < 3800) {
         peopleMonster.style.bottom ="-20%";
         peopleMonster.style.transition = "0.5s ease-in-out";
-    } else if (value > 3500) {
+    } else if (value > 4300) {
         peopleMonster.style.bottom ="0";
         peopleMonster.style.transition = "0.5s ease-in-out";
     }
