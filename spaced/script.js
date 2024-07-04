@@ -103,6 +103,11 @@ gsap.to(".BoxHeading2", {
     delay: 9.5,
     duration: 0.7,
 });
+gsap.from(".mainSpaceContainer", {
+    display: "none",
+    delay: 9,
+    duration: 0.5,
+});
 gsap.to(".ImgHeading img", {
     width: "100%",
     maxWidth: "746px",
@@ -112,4 +117,42 @@ gsap.to(".ImgHeading img", {
 gsap.to(".spaceManContainer img", {
     transform: "translateX(14.985px) translateY(14.985px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(2.997deg) skewX(0deg) skewY(0deg)",
     opacity: 1,
+});
+gsap.from(".formParent", {
+    opacity: 0,
+    delay: 9.5,
+    duration: 0.5,
+});
+
+gsap.from(".destinationMain", {
+    display: "none",
+    delay: 9.8,
+});
+
+gsap.to(".destinationMoonContainer .destinitionMassiveHeading", {
+    transform: "translateX(360px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg)",
+    delay: 9.8,
+    scrollTrigger: {
+        trigger: ".destinationMoonContainer",
+        scroller: "body",
+        scrub: 4,
+    },
+});
+gsap.from(".amazingPictures", {
+    display: "none",
+    delay: 9.10,
+});
+
+gsap.from(".activitiesSection", {
+    display: "none",
+    delay: 9.10,
+});
+gsap.from(".activityBoxConatainer .activityBox", {
+    transform: "scale(0.5)",
+    duration: 1,
+    delay: 9.10,
+    scrollTrigger: {
+        trigger: ".activityBoxConatainer",
+        scroller: "body",
+    },
 });
