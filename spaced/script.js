@@ -109,8 +109,7 @@ gsap.from(".mainSpaceContainer", {
     duration: 0.5,
 });
 gsap.to(".ImgHeading img", {
-    width: "100%",
-    maxWidth: "746px",
+    width: "70%",
     delay: 9,
     duration: 0.5,
 });
@@ -155,4 +154,91 @@ gsap.from(".activityBoxConatainer .activityBox", {
         trigger: ".activityBoxConatainer",
         scroller: "body",
     },
+});
+gsap.from(".flightMain .flightShipsHeading", {
+    x: "900px",
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".flightMain",
+        scroller: "body",
+        scrub: true,
+    }
+});
+gsap.from(".spacedRockectMain .rocketImg", {
+    transform: "translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-15deg) skewX(0deg) skewY(0deg)",
+    scrollTrigger: {
+        trigger: ".spacedRockectMain",
+        scroller: "body",
+        scrub: true,
+    }
+});
+gsap.from(".flightMain", {
+    display: "none",
+    delay: 9.10,
+});
+
+gsap.from(".spacedQuatersContainer", {
+    display: "none",
+    delay: 9.10,
+});
+
+gsap.from(".footerContainer", {
+    display: "none",
+    delay: 9.10,
+});
+gsap.from(".spacedRockectMain .stationImg", {
+    transform: "translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(25deg) skewX(0deg) skewY(0deg)",
+    scrollTrigger: {
+        trigger: ".spacedRockectMain",
+        scroller: "body",
+        scrub: true,
+    }
+});
+gsap.from(".spacedRockectMain .moonImg", {
+    transform: "translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-10deg) skewX(0deg) skewY(0deg)",
+    scrollTrigger: {
+        trigger: ".spacedRockectMain",
+        scroller: "body",
+        scrub: true,
+    }
+})
+gsap.from(".spacedQuaterMain .spaceMainQuater", {
+    transform: "translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg)",
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".spacedQuaterMain",
+        scroller: "body",
+        scrub: true,
+    }
+})
+gsap.from(".spacedQuaterMain .quaterImg", {
+    transform: " translateX(0vw) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg)",
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".spacedQuaterMain",
+        scroller: "body",
+        scrub: true,
+    }
+})
+gsap.from(".spacedQuaterMain .spaceQuaterImg", {
+    transform: "translateX(0vw) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg)",
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".spacedQuaterMain",
+        scroller: "body",
+        scrub: true,
+    }
+})
+gsap.from(".footerImagesContainer .footerimages", {
+    scale: "0.5",
+    duration: 1,
+    delay: 1, // Adjust delay for testing
+    stagger: 0.3,
+    scrollTrigger: {
+        trigger: ".footerImagesContainer",
+    }
+});
+gsap.from(".small-nav-bttom", {
+    display: "none",
+    delay: 9.10,
 });

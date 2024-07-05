@@ -3,7 +3,6 @@ body {
     padding: 0;
     background-image: url("./images/mainBody.jpg");
     background-position: 50% 0;
-    background-size: 100%;
     background-repeat: repeat-y;
     font-family: Roboto, sans-serif;
     opacity: 1;
@@ -127,6 +126,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .spaceHeader {
@@ -316,6 +316,7 @@ body {
 .ImgHeading img {
     height: 434px;
     position: relative;
+    object-fit: contain;
 }
 
 .spaceManContainer {
@@ -468,6 +469,7 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 25px;
+    overflow: hidden;
 }
 
 .formParent {
@@ -486,6 +488,7 @@ body {
     padding-right: 50px;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .orangeDivider {
@@ -655,11 +658,10 @@ body {
     position: relative;
 }
 
-.spaceMan {
+.spaceMan img {
     position: absolute;
-    top: 60%;
-    right: 0;
-    width: 80%;
+    right: 126px;
+    width: 58%;
     margin-top: -85%;
     margin-right: -9%;
 }
@@ -820,4 +822,880 @@ body {
     position: relative;
     border: none;
     cursor: pointer;
+}
+
+.flightMain {
+    background-color: #FFF;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 183px;
+    overflow: hidden;
+}
+
+.flightContainer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 25px;
+    position: relative;
+}
+
+.flightShipsHeading {
+    color: #ededef;
+    font-size: 320px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: Anton, sans-serif;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+}
+
+.flightOverview {
+    color: #ef480e;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 13%;
+}
+
+.flightHeading {
+    margin-top: 20px;
+    font-family: Anton, sans-serif;
+    line-height: 1em;
+    font-size: 52px;
+    line-height: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.flightSubHeading {
+    margin-top: 10px;
+    font-family: Anton, sans-serif;
+    color: #000;
+    font-size: 34px;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.flightDescription {
+    position: relative;
+    max-width: 80%;
+    margin-top: 20px;
+    color: rgba(28, 46, 70, .65);
+    font-size: 15px;
+    line-height: 1.7em;
+    column-count: 2;
+}
+
+.spacedRockectMain {
+    position: relative;
+    width: 33.33333333%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eliptical-circle {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: hsla(0, 0%, 70%, .65);
+    border-radius: 100%;
+}
+
+.rocketImg {
+    transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(14.997deg) skewX(0deg) skewY(0deg);
+}
+
+.flightAllData {
+    position: relative;
+    z-index: 99;
+}
+
+.stage-descriptor {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    bottom: 0;
+    width: 100px;
+    height: 30px;
+    border-bottom: 1px dashed hsla(0, 0%, 70%, .65);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: rgba(84, 87, 92, .65);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.stage-descriptor2 {
+    position: absolute;
+    top: 50%;
+    right: 32%;
+    bottom: 0;
+    width: 100px;
+    height: 30px;
+    border-bottom: 1px dashed hsla(0, 0%, 70%, .65);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: rgba(84, 87, 92, .65);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+.spaceRocketsConatiner {
+    position: relative;
+}
+
+.stationImg {
+    transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-14.9964deg) skewX(0deg) skewY(0deg);
+}
+
+.moonBorder {
+    padding: 10px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: hsla(0, 0%, 70%, .65);
+    border-radius: 100%;
+}
+
+.moonImg {
+    transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-29.998deg) skewX(0deg) skewY(0deg);
+}
+
+.spaceRocketsConatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spacedQuatersContainer {
+    width: 100%;
+    margin-top: -8%;
+    display: flex;
+}
+
+.spacedQuaterMain {
+    width: 50%;
+    text-align: center;
+}
+
+.spaceQuaterImg {
+    margin-top: 20px;
+    transform: translateX(-9.9994vw) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg);
+}
+
+.spaceMainQuater {
+    width: 100%;
+    max-width: 636px;
+    transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(1.29997) scaleY(1.29997) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg);
+}
+
+.quaterImg {
+
+    transform: translateX(-9.9992vw) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg);
+}
+
+.footerContainer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 25px;
+    margin-top: 10%;
+}
+
+.orange-divider-cenetred {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px;
+    max-width: 225px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ef480e;
+}
+
+.third-top {
+    position: absolute;
+    left: 0;
+    top: -3px;
+    width: 33.33333333%;
+    height: 3px;
+    background-color: #ef480e;
+}
+
+.spacedHeading {
+    margin-top: 25px;
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.footerImagesContainer {
+    display: flex;
+}
+
+.footerImg1 {
+    width: 25%;
+    text-align: center;
+}
+
+.footerImg2 {
+    width: 33.33333333%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.footerImg3 {
+    width: 25%;
+    text-align: center;
+}
+
+.manBar {
+    margin-bottom: 20px;
+}
+
+.footerImg4 {
+    width: 16%;
+}
+
+.footerimages img:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+
+.point {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 158px;
+}
+
+.footerContent {
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.footerLinksContainer {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.link {
+    margin-right: 35px;
+    margin-left: 35px;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.link:hover {
+    opacity: .75;
+}
+
+.small-nav-bttom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #1c2e46;
+    border-bottom: 2px none #1c2e46;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 4, 14, .39);
+}
+
+.smallNavContainer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 25px;
+}
+
+.small-nav__link {
+    margin-right: 20px;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+    color: #5b769b;
+    text-decoration: none;
+}
+
+.small-navRightSide {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.small-nav__link {
+    margin-right: 20px;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+    color: #5b769b;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menuButton {
+    width: 60px;
+    height: 60px;
+    float: right;
+    background-color: rgba(28, 46, 70, .65);
+    color: #5b769b;
+    position: relative;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+}
+
+.line-1 {
+    top: 15px;
+}
+
+.line-2 {
+    top: 27px;
+}
+
+.line-3 {
+    top: 40px;
+}
+
+.nav-menu {
+    background-color: rgba(28, 46, 70, .65);
+    position: absolute;
+    top: 96%;
+    width: 96%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 999;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.main-nav__cta,
+.main-nav__dropdown-link,
+.main-nav__link {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main-nav__link {
+    padding: 20px 35px;
+    opacity: .75;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    text-decoration: none;
+}
+
+.dropdowndestinationMenu {
+    /* transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(0) scaleY(0) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg); */
+    background-color: rgba(28, 46, 70, .65);
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    display: none;
+    width: 100%;
+    max-width: 141px;
+    padding: 10px 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    display: none;
+    /* position: absolute; */
+}
+
+.dropdowndestinationMenu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menuContainer {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    display: none;
+}
+
+.menuContainer:hover .nav-menu {
+    /* display: block;    */
+    opacity: 1;
+}
+
+.main-nav__link:hover .dropdowndestinationMenu {
+    display: flex;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .moonSpaceDiv img {
+        height: auto;
+        top: 10%;
+    }
+
+    .menuMain {
+        display: none;
+    }
+
+    .ImgHeading img {
+        height: auto;
+    }
+
+    .ImgHeading {
+        height: auto;
+    }
+
+    .formMain {
+        height: auto;
+    }
+
+    .spaceMan img {
+        position: absolute;
+        top: auto;
+        right: 0;
+        width: 80%;
+    }
+
+    .destinationMain {
+        padding: 0;
+    }
+
+    .destinationMain h2 {
+        padding-left: 25px;
+    }
+
+    .destinationMoons {
+        padding-left: 25px;
+    }
+
+    .moonContainer {
+        padding-left: 25px;
+    }
+
+    .destinitionMassiveHeading {
+        font-size: 200px;
+    }
+
+    .flexed-destination-features {
+        padding: 0px;
+    }
+
+    .amazingPictures {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .activitiesSection {
+        padding: 0 25px;
+    }
+    .spaceDataContainer {
+        overflow: hidden;
+    }
+    .footerImg1 img {
+        width: 100%;
+    }
+    .footerImg2 img {
+        width: 100%;
+    }
+    .footerImg3 img {
+        width: 100%;
+    }
+    .footerImg4 img {
+        width: 100%;
+    }
+    .footerImagesContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footerImg4 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .menuContainer {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .menuMain {
+        display: none;
+    }
+
+    .menuBookBtn {
+        max-width: 96px;
+    }
+
+    .spaceDataMain {
+        padding: 0 22px;
+    }
+
+    .mainSpaceContainer {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+
+    .formParent {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .spaceHeader {
+        width: 100%;
+    }
+
+    .ImgHeading img {
+        width: 70%;
+    }
+
+    .formMain {
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+
+    .partial-column {
+        width: auto;
+    }
+
+    .flightContainer {
+        padding: 40px 0px;
+    }
+    .flightOverview {
+        padding-left: 25px;
+    }
+    .flightHeading {
+        padding-left: 25px;
+    }
+    .flightSubHeading {
+        padding-left: 25px;
+    }
+    .flightDescription {
+        padding-left: 25px;
+    }
+    .spaceRocketsConatiner {
+        flex-wrap: wrap;
+    }
+    .flightShipsHeading {
+        font-size: 200px;
+    }
+    .spacedQuatersContainer {
+        overflow: hidden
+    }
+    .footerImg1 img {
+        width: 100%;
+    }
+    .footerImg2 img {
+        width: 100%;
+    }
+    .footerImg3 img {
+        width: 100%;
+    }
+    .footerImg4 img {
+        width: 100%;
+    }
+    .footerImagesContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footerImg4 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .point {
+        margin-top: 0;
+    }
+    .footerContainer {
+        padding: 0;
+    }
+    .footerLinksContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 793px) {
+    .partial-column {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .getStarted {
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 0px;
+        width: 100%;
+    }
+
+    .formDropDown {
+        justify-content: space-between;
+    }
+
+    .formMain {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .activityBoxConatainer {
+        flex-wrap: wrap;
+    }
+
+    .activityBox {
+        width: 100%;
+    }
+
+    .activityButtons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .activityHeading {
+        font-size: 8vw;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 910px) {
+    .spacedQuatersContainer {
+        flex-direction: column;
+        justify-content: center ;
+        gap: 55px;
+    }
+    .spacedQuaterMain {
+        width: 65%;
+    }
+    .spacedHeading {
+        font-size: 7vw;
+    }
+    .small-nav-bttom {
+        flex-wrap: wrap;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+    .smallNavContainer {
+        padding: 0 6px;
+    }
+    .small-nav__link {
+        font-size: 14px;
+    }
+    .small-navRightSide {
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .nav-Icon {
+        margin-right: 5px;
+    }
+
+    .navLeftSide a {
+        color: #5b769b;
+        text-decoration: none;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 11px;
+    }
+
+    .profileIcon {
+        margin-right: 11px;
+        cursor: pointer;
+    }
+
+    .navRightSide a {
+        color: #5b769b;
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 11px;
+        cursor: pointer;
+    }
+
+    .menuBookBtn {
+        display: none;
+    }
+
+    .spaceDataMain {
+        padding: 0 6px;
+    }
+
+    .formMain {
+        flex-direction: column;
+    }
+
+    .partial-column {
+        width: auto;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .getStarted {
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 0px;
+    }
+
+    .formDropDown {
+        justify-content: space-between;
+    }
+
+    .destinationMoon1 {
+        width: 113px;
+        height: 96px;
+    }
+
+    .destinationMain h2 {
+        padding-left: 5px;
+        font-size: 15vw;
+    }
+
+    .destinationMoons {
+        padding-left: 12px;
+    }
+
+    .destinationMoon2 {
+        background-position: 13% 50%;
+        width: 110px;
+        height: 101px;
+    }
+
+    .destinationMoon3 {
+        background-position: 13% 50%;
+        width: 110px;
+        height: 101px;
+    }
+
+    .destinationMoon4 {
+        background-position: 13% 50%;
+        width: 110px;
+        height: 101px;
+    }
+
+    .destinitionMassiveHeading {
+        font-size: 115px;
+    }
+
+    .moonContainer {
+        padding-left: 5px;
+    }
+
+    .theMoonHeader {
+        font-size: 15vw;
+    }
+
+    .destinitionDescription {
+        column-count: 1;
+    }
+
+    .formMain {
+        width: 100%;
+    }
+
+    .spaceMan img {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 80%;
+    }
+
+    .activityBoxConatainer {
+        flex-wrap: wrap;
+    }
+
+    .activityBox {
+        width: 100%;
+    }
+
+    .activityButtons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .activityBookButton {
+        margin-right: 0;
+    }
+
+    .activityHeading {
+        font-size: 8vw;
+        margin-bottom: 0;
+    }
+    .flightHeading {
+        font-size: 15vw;
+        padding-left: 6px;
+    }
+    .flightOverview {
+        padding-left: 6px;
+    }
+    .flightSubHeading {
+        padding-left: 6px;
+    }
+    .flightDescription {
+        padding-left: 6px;
+        column-count: 1;
+    }
+    .spaceRocketsConatiner {
+        flex-direction: column;
+    }
+    .flightShipsHeading {
+        font-size: 115px;
+    } 
+    .spacedQuatersContainer {
+        flex-direction: column;
+    }
+    .footerImg1 img {
+        width: 100%;
+    }
+    .footerImg2 img {
+        width: 100%;
+    }
+    .footerImg3 img {
+        width: 100%;
+    }
+    .footerImg4 img {
+        width: 100%;
+    }
+    .footerImagesContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footerImg4 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .point {
+        margin-top: 0;
+    }
+    .footerContainer {
+        padding: 0;
+    }
+    .girlImg {
+        height: 80%;
+        top: 0;
+        right: -20%;
+    }
 }
